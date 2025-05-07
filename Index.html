@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti 💖</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="mensaje-inicial" class="fade-in">Tengo algo para decirle... 💌</h1>
+        <button id="boton-inicio" class="fade-in">Haz clic aquí</button>
+
+        <div id="preguntas" class="oculto">
+            <div class="pregunta" id="pregunta1">
+                <h2 class="fade-in">¿Te gustan las sorpresas? 🎁</h2>
+                <button class="respuesta" onclick="siguientePregunta(1)">¡Sí!</button>
+                <button class="respuesta" onclick="siguientePregunta(1)">¡Me encantan!</button>
+            </div>
+
+            <div class="pregunta oculto" id="pregunta2">
+                <h2 class="fade-in" >Sabe desde que me entere que el vendria se me ocurrio una idea!🌟</h2>
+                <button class="respuesta" onclick="siguientePregunta(2)">Te gustaria saber cual es la idea? </button>
+               
+            </div>
+
+            <div class="pregunta oculto" id="pregunta3">
+                <h2 class="fade-in">¿Quieres acompañarme al concierto de Rels B? 💖</h2>
+                <button class="respuesta" onclick="mostrarRespuesta()">Sí!!</button>
+                <button class="respuesta" onclick="mostrarRespuesta()">¡Claro que sí!</button>
+            </div>
+        </div>
+
+        <div id="respuesta-final" class="oculto">
+            <h2 class="fade-in mensaje-final">¡Siempre supe que aceptarías! 💕</h2>
+            <p class="fade-in">Feliz de saber que iremos juntos, lqmm. 💘</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
